@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intro Computação</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <!-- Página 1 -->
+    <section id="page1" class="page active">
+      <h1>Bem-vinda à Intro Computação</h1>
+      <button class="btn" data-target="page2">Ir para a Segunda Página</button>
+      <button class="btn" data-target="page2">Outro Botão</button>
+    </section>
+
+    <!-- Página 2 -->
+    <section id="page2" class="page">
+      <h2>Escolha a Década</h2>
+      <nav>
+        <ul class="decades">
+          <li><button class="btn" data-target="decade70s">Anos 70</button></li>
+          <li><button class="btn" data-target="decade80s">Anos 80</button></li>
+          <li><button class="btn" data-target="decade90s">Anos 90</button></li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Décadas -->
+    <section id="decade70s" class="page">
+      <h3>Anos 70</h3>
+      <p>Conteúdo da década de 70...</p>
+    </section>
+
+    <section id="decade80s" class="page">
+      <h3>Anos 80</h3>
+      <p>Conteúdo da década de 80...</p>
+    </section>
+
+    <section id="decade90s" class="page">
+      <h3>Anos 90</h3>
+      <p>Conteúdo da década de 90...</p>
+    </section>
+
+    <!-- Navegação -->
+    <div class="nav-arrows">
+      <button id="prevBtn" aria-label="Página anterior">←</button>
+      <button id="nextBtn" aria-label="Próxima página">→</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
